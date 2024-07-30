@@ -1,0 +1,16 @@
+.Posts{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.commentinput{
+    width: 60%;
+    margin-left: 25%;
+    margin-right: auto;
+    height: 30px;
+    /* margin-left: 10%; */
+    border: 1px solid rgb(4, 115, 143);
+    border-radius: 9px;
+}

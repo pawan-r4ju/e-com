@@ -1,0 +1,28 @@
+.ProfileSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.Menu {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-items {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: larger;
+    color:#4f5050 ; 
+}
