@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run frontend\" \"npm run backend"
   },
   "keywords": [],
-  "author": "HuXn WebDev",
+  "author": "pawan raju",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
