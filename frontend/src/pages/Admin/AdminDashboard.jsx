@@ -1,4 +1,6 @@
 import Chart from "react-apexcharts";
+import { FaUser } from "react-icons/fa";
+import { FaCartPlus } from "react-icons/fa6";
 import { useGetUsersQuery } from "../../redux/api/usersApiSlice";
 import {
   useGetTotalOrdersQuery,
@@ -105,18 +107,18 @@ const AdminDashboard = () => {
             </h1>
           </div>
           <div className="rounded-lg bg-black p-5 w-[20rem] mt-5">
-            <div className="font-bold rounded-full w-[3rem] bg-pink-500 text-center p-3">
-            ₹
+            <div className="font-bold rounded-full w-[3rem] bg-pink-500 text-center p-3 ">
+            <FaUser className="ml-0.5"/>
             </div>
 
             <p className="mt-5">Customers</p>
             <h1 className="text-xl font-bold">
-            ₹ {isLoading ? <Loader /> : customers?.length}
+             {isLoading ? <Loader /> : customers?.length}
             </h1>
           </div>
           <div className="rounded-lg bg-black p-5 w-[20rem] mt-5">
             <div className="font-bold rounded-full w-[3rem] bg-pink-500 text-center p-3">
-            ₹
+            <FaCartPlus className="ml-0.5"/>
             </div>
 
             <p className="mt-5">All Orders</p>

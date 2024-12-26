@@ -126,9 +126,9 @@ const calcualteTotalSalesByDate = async (req, res) => {
       {
         $group: {
           _id: {
-            $dateToString: { format: "%Y-%m-%d", date: "$paidAt" },
+            $dateToString: { format: "%Y-%m-%d", date: "₹paidAt" },
           },
-          totalSales: { $sum: "$totalPrice" },
+          totalSales: { $sum: "₹totalPrice" },
         },
       },
     ]);

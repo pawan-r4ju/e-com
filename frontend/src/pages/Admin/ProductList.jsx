@@ -22,7 +22,11 @@ const ProductList = () => {
 
   const [uploadProductImage] = useUploadProductImageMutation();
   const [createProduct] = useCreateProductMutation();
-  const { data: categories } = useFetchCategoriesQuery();
+  const { data: categories, error, isLoading } = useFetchCategoriesQuery();
+
+  console.log("Categories data:", categories);
+  console.log("Error:", error);
+  console.log("Loading:", isLoading);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
