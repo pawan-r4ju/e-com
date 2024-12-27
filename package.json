@@ -1,5 +1,5 @@
 {
-  "name": "MERN e-commerce",
+  "name": "e-com",
   "version": "1.0.0",
   "description": "MERN Stack E-Commerce Project",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run frontend\" \"npm run backend"
   },
   "keywords": [],
-  "author": "HuXn WebDev",
+  "author": "pawan raju",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -21,6 +21,7 @@
     "express": "^4.21.2",
     "express-async-handler": "^1.2.0",
     "express-formidable": "^1.2.0",
+    "formidable": "^3.5.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.2",
     "multer": "^1.4.5-lts.1",
