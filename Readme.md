@@ -29,7 +29,7 @@ A full-stack blogging platform built with Node.js, Express, MongoDB, and EJS.
 
 1. **Clone the repository:***
    ```bash
-   git clone https://github.com/yourusername/e-com.git
+   git clone https://github.com/pawan-r4ju/e-com.git
    cd e-com/frontend
    ```
 2. **Install the dependencies:**
