@@ -8,8 +8,7 @@ import {
   useUpdateUserMutation,
 } from "../../redux/api/usersApiSlice";
 import { toast } from "react-toastify";
-// ⚠️⚠️⚠️ don't forget this ⚠️⚠️⚠️⚠️
-// import AdminMenu from "./AdminMenu";
+
 
 const UserList = () => {
   const { data: users, refetch, isLoading, error } = useGetUsersQuery();
@@ -58,8 +57,8 @@ const UserList = () => {
   };
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-semibold mb-4">Users</h1>
+    <div className="p-4 pl-24 pr-10">
+      <h1 className="text-2xl font-semibold mb-4 ">Users</h1>
       {isLoading ? (
         <Loader />
       ) : error ? (

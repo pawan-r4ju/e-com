@@ -49,21 +49,25 @@ const Navigation = () => {
       } xl:flex lg:flex md:hidden sm:hidden flex-col justify-between p-4 text-white bg-[#000] w-[4%] hover:w-[15%] h-[100vh]  fixed `}
       id="navigation-container"
     >
-      <div className="flex flex-col justify-center space-y-4">
+      <div className="flex flex-col justify-center space-y-5">
         <Link
           to="/"
-          className="flex items-center transition-transform transform hover:translate-x-2"
+          className="flex relative"
         >
+          <div className="flex items-center transition-transform transform hover:translate-x-2">
           <AiOutlineHome className="mr-2 mt-[3rem]" size={26} />
           <span className="hidden nav-item-name mt-[3rem]">HOME</span>{" "}
+          </div>
         </Link>
 
         <Link
           to="/shop"
-          className="flex items-center transition-transform transform hover:translate-x-2"
-        >
-          <AiOutlineShopping className="mr-2 mt-[3rem]" size={26} />
+          className="flex relative"
+        ><div className="flex items-center transition-transform transform hover:translate-x-2">
+           <AiOutlineShopping className="mr-2 mt-[3rem]" size={26} />
           <span className="hidden nav-item-name mt-[3rem]">SHOP</span>{" "}
+        </div>
+         
         </Link>
 
         <Link to="/cart" className="flex relative">
@@ -126,7 +130,7 @@ const Navigation = () => {
 
         {dropdownOpen && userInfo && (
           <ul
-            className={`absolute right-0 mt-2 mr-14 space-y-2 bg-white text-gray-600 ${
+            className={`absolute right-0 mt-2  space-y-1 bg-white text-gray-600 ${
               !userInfo.isAdmin ? "-top-20" : "-top-80"
             } `}
           >

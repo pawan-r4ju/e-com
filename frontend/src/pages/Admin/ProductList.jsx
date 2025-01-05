@@ -112,7 +112,7 @@ const ProductList = () => {
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
-              <div className="two ml-10 ">
+              <div>
                 <label htmlFor="name block">Price</label> <br />
                 <input
                   type="number"
@@ -132,7 +132,7 @@ const ProductList = () => {
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
-              <div className="two ml-10 ">
+              <div className=" ">
                 <label htmlFor="name block">Brand</label> <br />
                 <input
                   type="text"
@@ -154,21 +154,21 @@ const ProductList = () => {
             ></textarea>
 
             <div className="flex justify-between">
-              <div>
+              <div className="">
                 <label htmlFor="name block">Count In Stock</label> <br />
                 <input
                   type="text"
-                  className="p-4 mb-3 w-[30rem] border rounded-lg bg-[#101011] text-white"
+                  className="p-4 mb-3 ml- w-[30rem] border rounded-lg bg-[#101011] text-white"
                   value={stock}
                   onChange={(e) => setStock(e.target.value)}
                 />
               </div>
 
-              <div>
+              <div className="ml-5">
                 <label htmlFor="">Category</label> <br />
                 <select
                   placeholder="Choose Category"
-                  className="p-4 mb-3 w-[30rem] border rounded-lg bg-[#101011] text-white"
+                  className="p-4 mb-3 w-[25rem] border rounded-lg bg-[#101011] text-white"
                   onChange={(e) => setCategory(e.target.value)}
                 >
                   {categories?.map((c) => (

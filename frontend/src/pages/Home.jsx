@@ -11,7 +11,8 @@ const Home = () => {
 
   return (
     <>
-      {!keyword ? <Header /> : null}
+     <div className="ml-14 mr-8">
+     {!keyword ? <Header /> : null}
       {isLoading ? (
         <Loader />
       ) : isError ? (
@@ -44,6 +45,7 @@ const Home = () => {
           </div>
         </>
       )}
+     </div>
     </>
   );
 };
