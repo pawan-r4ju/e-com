@@ -1,6 +1,6 @@
 # 🛒 E-COM
 
-# 🌐 A full-stack blogging platform built with Node.js, Express, MongoDB, and Reac.js.
+# 🌐 A full-stack e-commerce platform built with Node.js, Express, MongoDB, and Reac.js.
 
 ## 🚀 Features
 
